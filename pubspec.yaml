@@ -1,0 +1,103 @@
+name: deligo
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  animation_wrappers: ^3.0.0
+  buy_this_app:
+    path: buythisapp
+  cached_network_image: ^3.3.1
+  carousel_slider: ^5.1.1
+  connectivity_plus: ^6.1.5
+  country_code_picker: ^3.1.0
+  cupertino_icons: ^1.0.8
+  device_info_plus: ^11.5.0
+  dio: ^5.3.0
+  dotted_border: ^3.1.0
+  firebase_app_check: ^0.3.2+10
+  firebase_auth: ^5.6.2
+  firebase_core: ^3.8.1
+  firebase_crashlytics: ^4.3.9
+  firebase_database: ^11.3.9
+  firebase_remote_config: ^5.5.0
+  firebase_storage: ^12.4.9
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_google_places_hoc081098: ^2.0.0
+  flutter_inappwebview: ^6.0.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_native_splash: ^2.3.2
+  flutter_polyline_points: ^2.1.0
+  flutter_rating_bar: ^4.0.1
+  flutter_staggered_grid_view: ^0.7.0
+  fluttertoast: ^8.2.12
+  focus_detector: ^2.0.1
+  geocoding: ^4.0.0
+  google_maps_flutter: ^2.9.0
+  image_cropper: ^9.1.0
+  image_picker: ^1.0.1
+  json_annotation: ^4.4.0
+  location: ^8.0.1
+  marquee_widget: ^1.2.0
+  ndialog: ^4.5.0+1
+  onesignal_flutter: ^5.3.4
+  photo_view: ^0.15.0
+  pretty_dio_logger: ^1.1.1
+  retrofit: ^4.0.1
+  scrollable_positioned_list: ^0.3.8
+  shared_preferences: ^2.3.2
+  shimmer: ^3.0.0
+  url_launcher: ^6.0.18
+
+dev_dependencies:
+  build_runner: ^2.4.11
+  flutter_flavorizr: ^2.4.1
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.8.0
+  retrofit_generator: ^9.6.0
+
+#fvm flutter pub get && fvm flutter pub run flutter_flavorizr
+#fvm flutter pub run flutter_native_splash:create --flavor deligo
+flavorizr:
+  flavors:
+    deligo:
+      app:
+        name: "MartGO"
+      android:
+        icon: "assets/flavors/icon/deligo/app_icon.png"
+        applicationId: "com.deligo.app"
+        firebase:
+          config: "assets/flavors/firebase/deligo/google-services.json"
+      ios:
+        icon: "assets/flavors/icon/deligo/app_icon.png"
+        bundleId: "com.deligo.app"
+        firebase:
+          config: "assets/flavors/firebase/deligo/GoogleService-Info.plist"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/payment/
+    - assets/pins/
+    - assets/flavors/
+    - assets/flavors/logo/deligo/
+    - assets/onboarding/
+    - assets/bottom_menu/
+
+  fonts:
+    - family: ProductSans
+      fonts:
+        - asset: assets/fonts/ProductSans-Bold.ttf
+        - asset: assets/fonts/ProductSans-Regular.ttf

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YourAppName</string>
+    <string name="api_key_google">YourMapsApiKey</string>
+    <string name="facebook_app_id">00000000000000</string>
+    <string name="fb_login_protocol_scheme">fb00000000000000</string>
+    <string name="facebook_client_token">0000000000000000000</string>
+    <string name="admob_app_id"></string>
+    <string name="onesignal_notification_accent_color">FF0de8d1</string>
+</resources>

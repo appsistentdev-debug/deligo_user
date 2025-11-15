@@ -1,0 +1,3371 @@
+{
+    "data": [
+        {
+            "id": 142,
+            "meta": null,
+            "address_from": "9, Jalan 3/6k, Seksyen 3 Bandar Baru Bangi, Bandar Baru Bangi, Selangor, 43650, Malaysia",
+            "longitude_from": "101.7775201",
+            "latitude_from": "2.9513472",
+            "address_to": "56 Lebuh IRC, Serdang, Selangor, 62050, Malaysia",
+            "longitude_to": "101.7211091",
+            "latitude_to": "2.9666758",
+            "ride_start_at": null,
+            "ride_ends_at": null,
+            "ride_on": "2025-07-17 09:35:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 43,
+            "estimated_pickup_time": 46,
+            "estimated_distance": 12,
+            "final_distance": null,
+            "estimated_time": 18,
+            "final_time": null,
+            "discount": 0,
+            "estimated_fare_subtotal": 19,
+            "estimated_fare_total": 19,
+            "final_fare_subtotal": null,
+            "final_fare_total": null,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "accepted",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 142,
+                "payable_id": 142,
+                "payer_id": 13,
+                "amount": 19,
+                "status": "pending",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-17 09:35:55",
+            "updated_at": "2025-07-17 09:35:55"
+        },
+        {
+            "id": 141,
+            "meta": null,
+            "address_from": "1, Jalan PJU 1/43, Aman Suria, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_from": "101.5948154",
+            "latitude_from": "3.1198035",
+            "address_to": "Paradigm Mall, UG 16, Jalan SS 7/26a, Ss 7, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_to": "101.5959701",
+            "latitude_to": "3.1051171",
+            "ride_start_at": "2025-07-17 07:00:22",
+            "ride_ends_at": "2025-07-17 07:12:06",
+            "ride_on": "2025-07-17 06:59:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 1,
+            "estimated_pickup_time": 4,
+            "estimated_distance": 6,
+            "final_distance": 7,
+            "estimated_time": 12,
+            "final_time": -11.7435121,
+            "discount": 0,
+            "estimated_fare_subtotal": 10,
+            "estimated_fare_total": 10,
+            "final_fare_subtotal": 11.5,
+            "final_fare_total": 11.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 141,
+                "payable_id": 141,
+                "payer_id": 13,
+                "amount": 11.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-17 06:59:56",
+            "updated_at": "2025-07-17 07:12:06"
+        },
+        {
+            "id": 140,
+            "meta": null,
+            "address_from": "City, IOI City Mall, 2, Lebuh IRC, Ioi Resort, Serdang, Selangor, 62502, Malaysia",
+            "longitude_from": "101.7136681",
+            "latitude_from": "2.9706630",
+            "address_to": "1, Jalan PJU 1/43, Aman Suria, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_to": "101.5948154",
+            "latitude_to": "3.1198035",
+            "ride_start_at": "2025-07-14 07:49:00",
+            "ride_ends_at": "2025-07-14 07:50:11",
+            "ride_on": "2025-07-14 07:47:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 3,
+            "estimated_pickup_time": 8,
+            "estimated_distance": 31,
+            "final_distance": 2,
+            "estimated_time": 35,
+            "final_time": -1.1889556833333,
+            "discount": 0,
+            "estimated_fare_subtotal": 47.5,
+            "estimated_fare_total": 47.5,
+            "final_fare_subtotal": 4,
+            "final_fare_total": 4,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 140,
+                "payable_id": 140,
+                "payer_id": 13,
+                "amount": 4,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-14 07:47:25",
+            "updated_at": "2025-07-14 07:50:11"
+        },
+        {
+            "id": 139,
+            "meta": null,
+            "address_from": "G9JM+WCC, Lotus Panache Road, Sector 110, Noida, Meerut Division, Uttar Pradesh, India",
+            "longitude_from": "77.3835701",
+            "latitude_from": "28.5322553",
+            "address_to": "987, Rohini, Delhi, Delhi Division, 110034, India",
+            "longitude_to": "77.1024902",
+            "latitude_to": "28.7040592",
+            "ride_start_at": "2025-07-13 17:28:46",
+            "ride_ends_at": "2025-07-13 17:28:51",
+            "ride_on": "2025-07-13 17:27:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 0,
+            "estimated_pickup_time": 0,
+            "estimated_distance": 49,
+            "final_distance": 0,
+            "estimated_time": 76,
+            "final_time": -0.099441366666667,
+            "discount": 0,
+            "estimated_fare_subtotal": 74.5,
+            "estimated_fare_total": 74.5,
+            "final_fare_subtotal": 1,
+            "final_fare_total": 1,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 139,
+                "payable_id": 139,
+                "payer_id": 13,
+                "amount": 1,
+                "status": "pending",
+                "payment_method": {
+                    "id": 2,
+                    "slug": "cash",
+                    "title": "Cash",
+                    "title_translations": {
+                        "en": "Cash"
+                    },
+                    "meta": "cash",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-13 17:27:47",
+            "updated_at": "2025-07-13 17:28:51"
+        },
+        {
+            "id": 138,
+            "meta": null,
+            "address_from": "gehe G9JM+WCC, Lotus Panache Road, Sector 110, Noida, Meerut Division, Uttar Pradesh, India",
+            "longitude_from": "77.3833963",
+            "latitude_from": "28.5323817",
+            "address_to": "Doctor Zakir Hussain Road, Udaipur, Dhampur, Moradabad Division, Uttar Pradesh, 246761, India",
+            "longitude_to": "78.5033076",
+            "latitude_to": "29.3080255",
+            "ride_start_at": "2025-07-13 08:30:47",
+            "ride_ends_at": "2025-07-13 08:30:54",
+            "ride_on": "2025-07-13 08:30:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 174,
+            "estimated_pickup_time": 212,
+            "estimated_distance": 175,
+            "final_distance": 175,
+            "estimated_time": 209,
+            "final_time": -0.1319395,
+            "discount": 0,
+            "estimated_fare_subtotal": 263.5,
+            "estimated_fare_total": 263.5,
+            "final_fare_subtotal": 263.5,
+            "final_fare_total": 263.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 138,
+                "payable_id": 138,
+                "payer_id": 13,
+                "amount": 263.5,
+                "status": "pending",
+                "payment_method": {
+                    "id": 2,
+                    "slug": "cash",
+                    "title": "Cash",
+                    "title_translations": {
+                        "en": "Cash"
+                    },
+                    "meta": "cash",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-13 08:30:25",
+            "updated_at": "2025-07-13 08:30:54"
+        },
+        {
+            "id": 137,
+            "meta": null,
+            "address_from": "1, Jalan PJU 1/43, Aman Suria, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_from": "101.5948154",
+            "latitude_from": "3.1198035",
+            "address_to": "Paradigm Mall, UG 16, Jalan SS 7/26a, Ss 7, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_to": "101.5959701",
+            "latitude_to": "3.1051171",
+            "ride_start_at": "2025-07-08 12:01:45",
+            "ride_ends_at": "2025-07-08 12:10:56",
+            "ride_on": "2025-07-08 12:01:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 1,
+            "estimated_pickup_time": 4,
+            "estimated_distance": 6,
+            "final_distance": 1,
+            "estimated_time": 12,
+            "final_time": -9.18772155,
+            "discount": 0,
+            "estimated_fare_subtotal": 10,
+            "estimated_fare_total": 10,
+            "final_fare_subtotal": 2.5,
+            "final_fare_total": 2.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 137,
+                "payable_id": 137,
+                "payer_id": 13,
+                "amount": 2.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-08 12:01:19",
+            "updated_at": "2025-07-08 12:10:56"
+        },
+        {
+            "id": 136,
+            "meta": null,
+            "address_from": "Paradigm Mall, UG 16, Jalan SS 7/26a, Ss 7, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_from": "101.5959701",
+            "latitude_from": "3.1051171",
+            "address_to": "77, Jalan Rida 3/56, Pjs 3, Petaling Jaya, Selangor, 46000, Malaysia",
+            "longitude_to": "101.6478454",
+            "latitude_to": "3.0873478",
+            "ride_start_at": "2025-07-07 10:50:53",
+            "ride_ends_at": "2025-07-07 10:50:56",
+            "ride_on": "2025-07-07 10:50:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 6,
+            "estimated_pickup_time": 11,
+            "estimated_distance": 10,
+            "final_distance": 3,
+            "estimated_time": 16,
+            "final_time": -0.06475345,
+            "discount": 0,
+            "estimated_fare_subtotal": 16,
+            "estimated_fare_total": 16,
+            "final_fare_subtotal": 5.5,
+            "final_fare_total": 5.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 136,
+                "payable_id": 136,
+                "payer_id": 13,
+                "amount": 5.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-07 10:50:25",
+            "updated_at": "2025-07-07 10:50:56"
+        },
+        {
+            "id": 135,
+            "meta": null,
+            "address_from": "1, Jalan PJU 1/43, Aman Suria, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_from": "101.5948154",
+            "latitude_from": "3.1198035",
+            "address_to": "24-B1, Jalan SS 6/3, Ss 6, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_to": "101.6000967",
+            "latitude_to": "3.1060952",
+            "ride_start_at": "2025-07-07 03:35:55",
+            "ride_ends_at": "2025-07-07 03:35:58",
+            "ride_on": "2025-07-07 03:35:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 1,
+            "estimated_pickup_time": 4,
+            "estimated_distance": 6,
+            "final_distance": 1,
+            "estimated_time": 13,
+            "final_time": -0.0584148,
+            "discount": 0,
+            "estimated_fare_subtotal": 10,
+            "estimated_fare_total": 10,
+            "final_fare_subtotal": 2.5,
+            "final_fare_total": 2.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 135,
+                "payable_id": 135,
+                "payer_id": 13,
+                "amount": 2.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-07 03:35:36",
+            "updated_at": "2025-07-07 03:35:58"
+        },
+        {
+            "id": 134,
+            "meta": null,
+            "address_from": "1, Jalan SS 6/2, Ss 6, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_from": "101.5997038",
+            "latitude_from": "3.1012226",
+            "address_to": "1, Jalan PJU 1/43, Aman Suria, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_to": "101.5948154",
+            "latitude_to": "3.1198035",
+            "ride_start_at": "2025-07-07 03:34:19",
+            "ride_ends_at": "2025-07-07 03:34:27",
+            "ride_on": "2025-07-07 03:33:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 6,
+            "estimated_pickup_time": 11,
+            "estimated_distance": 7,
+            "final_distance": 7,
+            "estimated_time": 10,
+            "final_time": -0.14378721666667,
+            "discount": 0,
+            "estimated_fare_subtotal": 11.5,
+            "estimated_fare_total": 11.5,
+            "final_fare_subtotal": 11.5,
+            "final_fare_total": 11.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 134,
+                "payable_id": 134,
+                "payer_id": 13,
+                "amount": 11.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-07 03:33:59",
+            "updated_at": "2025-07-07 03:34:27"
+        },
+        {
+            "id": 133,
+            "meta": null,
+            "address_from": "1, Jalan PJU 1/43, Aman Suria, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_from": "101.5948154",
+            "latitude_from": "3.1198035",
+            "address_to": "1, Jalan SS 6/2, Ss 6, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_to": "101.5997038",
+            "latitude_to": "3.1012226",
+            "ride_start_at": "2025-07-07 03:31:56",
+            "ride_ends_at": "2025-07-07 03:32:00",
+            "ride_on": "2025-07-07 03:31:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 1,
+            "estimated_pickup_time": 4,
+            "estimated_distance": 6,
+            "final_distance": 1,
+            "estimated_time": 12,
+            "final_time": -0.0716055,
+            "discount": 0,
+            "estimated_fare_subtotal": 10,
+            "estimated_fare_total": 10,
+            "final_fare_subtotal": 2.5,
+            "final_fare_total": 2.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 133,
+                "payable_id": 133,
+                "payer_id": 13,
+                "amount": 2.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-07 03:31:33",
+            "updated_at": "2025-07-07 03:32:00"
+        },
+        {
+            "id": 132,
+            "meta": null,
+            "address_from": "02, Gaur City 2, Ghaziabad, Meerut Division, Uttar Pradesh, 201009, India",
+            "longitude_from": "77.4257472",
+            "latitude_from": "28.6215997",
+            "address_to": "1141A, Sector 4, Ghaziabad, Meerut Division, Uttar Pradesh, 201306, India",
+            "longitude_to": "77.4296325",
+            "latitude_to": "28.6060285",
+            "ride_start_at": "2025-07-03 13:56:58",
+            "ride_ends_at": "2025-07-03 13:57:03",
+            "ride_on": "2025-07-03 13:56:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 2,
+            "estimated_pickup_time": 7,
+            "estimated_distance": 3,
+            "final_distance": 1,
+            "estimated_time": 7,
+            "final_time": -0.085685,
+            "discount": 0,
+            "estimated_fare_subtotal": 5.5,
+            "estimated_fare_total": 5.5,
+            "final_fare_subtotal": 2.5,
+            "final_fare_total": 2.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 132,
+                "payable_id": 132,
+                "payer_id": 13,
+                "amount": 2.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-03 13:56:16",
+            "updated_at": "2025-07-03 13:57:03"
+        },
+        {
+            "id": 131,
+            "meta": null,
+            "address_from": "02, Gaur City 2, Ghaziabad, Meerut Division, Uttar Pradesh, 201009, India",
+            "longitude_from": "77.4257472",
+            "latitude_from": "28.6215997",
+            "address_to": "1141A, Sector 4, Ghaziabad, Meerut Division, Uttar Pradesh, 201306, India",
+            "longitude_to": "77.4296325",
+            "latitude_to": "28.6060285",
+            "ride_start_at": "2025-07-03 13:47:14",
+            "ride_ends_at": "2025-07-03 13:47:17",
+            "ride_on": "2025-07-03 13:46:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 2,
+            "estimated_pickup_time": 7,
+            "estimated_distance": 3,
+            "final_distance": 1,
+            "estimated_time": 7,
+            "final_time": -0.065375916666667,
+            "discount": 0,
+            "estimated_fare_subtotal": 5.5,
+            "estimated_fare_total": 5.5,
+            "final_fare_subtotal": 2.5,
+            "final_fare_total": 2.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 131,
+                "payable_id": 131,
+                "payer_id": 13,
+                "amount": 2.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-03 13:46:51",
+            "updated_at": "2025-07-03 13:47:17"
+        },
+        {
+            "id": 130,
+            "meta": null,
+            "address_from": "02, Gaur City 2, Ghaziabad, Meerut Division, Uttar Pradesh, 201009, India",
+            "longitude_from": "77.4257472",
+            "latitude_from": "28.6215997",
+            "address_to": "1141A, Sector 4, Ghaziabad, Meerut Division, Uttar Pradesh, 201306, India",
+            "longitude_to": "77.4296325",
+            "latitude_to": "28.6060285",
+            "ride_start_at": "2025-07-03 13:03:27",
+            "ride_ends_at": "2025-07-03 13:03:31",
+            "ride_on": "2025-07-03 13:02:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 2,
+            "estimated_pickup_time": 7,
+            "estimated_distance": 3,
+            "final_distance": 1,
+            "estimated_time": 7,
+            "final_time": -0.082849166666667,
+            "discount": 0,
+            "estimated_fare_subtotal": 5.5,
+            "estimated_fare_total": 5.5,
+            "final_fare_subtotal": 2.5,
+            "final_fare_total": 2.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 130,
+                "payable_id": 130,
+                "payer_id": 13,
+                "amount": 2.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-03 13:02:16",
+            "updated_at": "2025-07-03 13:03:31"
+        },
+        {
+            "id": 129,
+            "meta": null,
+            "address_from": "Jalan PJS 11/15, Bandar Sunway, Subang Jaya, Selangor, 47500, Malaysia",
+            "longitude_from": "101.6075559",
+            "latitude_from": "3.0731724",
+            "address_to": "13, Lebuhraya Baru Pantai, Petaling Jaya, Selangor, 46150, Malaysia",
+            "longitude_to": "101.6266161",
+            "latitude_to": "3.0853638",
+            "ride_start_at": null,
+            "ride_ends_at": null,
+            "ride_on": "2025-07-03 08:52:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 5537,
+            "estimated_pickup_time": 5504,
+            "estimated_distance": 15,
+            "final_distance": null,
+            "estimated_time": 20,
+            "final_time": null,
+            "discount": 0,
+            "estimated_fare_subtotal": 23.5,
+            "estimated_fare_total": 23.5,
+            "final_fare_subtotal": null,
+            "final_fare_total": null,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "cancelled",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 129,
+                "payable_id": 129,
+                "payer_id": 13,
+                "amount": 23.5,
+                "status": "pending",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-03 08:52:46",
+            "updated_at": "2025-07-03 08:52:46"
+        },
+        {
+            "id": 128,
+            "meta": null,
+            "address_from": "1, Jalan PJU 1/43, Aman Suria, Petaling Jaya, Selangor, 47301, Malaysia",
+            "longitude_from": "101.5948154",
+            "latitude_from": "3.1198035",
+            "address_to": "13, Lebuhraya Baru Pantai, Petaling Jaya, Selangor, 46150, Malaysia",
+            "longitude_to": "101.6266161",
+            "latitude_to": "3.0853638",
+            "ride_start_at": "2025-07-03 03:49:48",
+            "ride_ends_at": "2025-07-03 03:49:52",
+            "ride_on": "2025-07-03 03:49:00",
+            "is_scheduled": 0,
+            "estimated_pickup_distance": 1,
+            "estimated_pickup_time": 4,
+            "estimated_distance": 11,
+            "final_distance": 1,
+            "estimated_time": 23,
+            "final_time": -0.074683516666667,
+            "discount": 0,
+            "estimated_fare_subtotal": 17.5,
+            "estimated_fare_total": 17.5,
+            "final_fare_subtotal": 2.5,
+            "final_fare_total": 2.5,
+            "cancelled_by": null,
+            "cancel_reason": null,
+            "status": "complete",
+            "type": "ride",
+            "vehicle_type": {
+                "id": 1,
+                "meta": {
+                    "reaching_time": "5 mins"
+                },
+                "title": "Standard",
+                "base_fare": 1,
+                "distance_charges_per_unit": 1.5,
+                "time_charges_per_minute": 0,
+                "other_charges": 0,
+                "seats": 5,
+                "type": "ride",
+                "mediaurls": {
+                    "images": [
+                        {
+                            "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                        }
+                    ]
+                }
+            },
+            "user": {
+                "id": 13,
+                "name": "Test User",
+                "email": "test@user.com",
+                "username": null,
+                "mobile_number": "+919898989898",
+                "mobile_verified": 1,
+                "is_verified": 0,
+                "active": 1,
+                "language": "en",
+                "notification": {
+                    "customer": "c774c056-7577-4aac-b3ec-2c2679a4bdec"
+                },
+                "meta": null,
+                "mediaurls": [],
+                "balance": "9913111.50",
+                "wallet": {
+                    "id": 11,
+                    "user_id": 13,
+                    "balance": "9913111.50",
+                    "created_at": "2025-05-30T09:36:07.000000Z",
+                    "updated_at": "2025-07-17T07:12:07.000000Z"
+                },
+                "is_following": false,
+                "categories": [],
+                "plan": null,
+                "has_blocked": false,
+                "is_blocked": false,
+                "ratings": 0,
+                "ratings_count": 0,
+                "referral_code": "LDmwjNpy"
+            },
+            "driver": {
+                "id": 6,
+                "meta": {
+                    "gender": "male",
+                    "hot_food_bag": "false",
+                    "ride_serv_pref": "both",
+                    "vehicle_number": "Cff456",
+                    "driving_license": "https://admin.ezi2go.com/storage/uploads//XXF0XE8U_1750071883.png"
+                },
+                "is_verified": 1,
+                "is_online": 1,
+                "is_riding": 1,
+                "current_latitude": 2.9514308,
+                "current_longitude": 101.7776368,
+                "distance_remaining": 12000,
+                "vehicletypes": [
+                    {
+                        "id": 1,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "ride",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/3/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "meta": {
+                            "reaching_time": "5 mins"
+                        },
+                        "title": "Standard",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1.5,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 5,
+                        "type": "intercity",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/7/InstaMini.png"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "meta": {
+                            "weight_capacity": "50"
+                        },
+                        "title": "Scooter",
+                        "base_fare": 1,
+                        "distance_charges_per_unit": 1,
+                        "time_charges_per_minute": 0,
+                        "other_charges": 0,
+                        "seats": 1,
+                        "type": "courier",
+                        "mediaurls": {
+                            "images": [
+                                {
+                                    "default": "https://admin.ezi2go.com/storage/10/scooter.png"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "user": {
+                    "id": 12,
+                    "name": "Test driver",
+                    "email": "Test@driver.com",
+                    "username": null,
+                    "mobile_number": "+918787878787",
+                    "mobile_verified": 1,
+                    "is_verified": 0,
+                    "active": 1,
+                    "language": "en",
+                    "notification": {
+                        "driver": "2bb63f66-59ff-479e-b5ad-8dc02f886889"
+                    },
+                    "meta": null,
+                    "mediaurls": {
+                        "images": [
+                            {
+                                "default": "https://admin.ezi2go.com/storage/20/ZVA19KHZ_1748679369.jpg"
+                            }
+                        ]
+                    },
+                    "balance": "5234.00",
+                    "wallet": {
+                        "id": 10,
+                        "user_id": 12,
+                        "balance": "5234.00",
+                        "created_at": "2025-05-29T08:15:25.000000Z",
+                        "updated_at": "2025-07-17T07:12:07.000000Z"
+                    },
+                    "is_following": false,
+                    "categories": [],
+                    "plan": null,
+                    "has_blocked": false,
+                    "is_blocked": false,
+                    "ratings": 0,
+                    "ratings_count": 0,
+                    "referral_code": "VQJvKv9B"
+                },
+                "ratings": 4.392156862745098,
+                "ratings_count": 51
+            },
+            "payment": {
+                "id": 128,
+                "payable_id": 128,
+                "payer_id": 13,
+                "amount": 2.5,
+                "status": "paid",
+                "payment_method": {
+                    "id": 1,
+                    "slug": "wallet",
+                    "title": "Wallet",
+                    "title_translations": {
+                        "en": "Wallet"
+                    },
+                    "meta": "wallet",
+                    "enabled": 1,
+                    "type": "prepaid",
+                    "country_code": null
+                }
+            },
+            "created_at": "2025-07-03 03:49:27",
+            "updated_at": "2025-07-03 03:49:52"
+        }
+    ],
+    "links": {
+        "first": "https://admin.ezi2go.com/api/ride/rides?page=1",
+        "last": "https://admin.ezi2go.com/api/ride/rides?page=8",
+        "prev": null,
+        "next": "https://admin.ezi2go.com/api/ride/rides?page=2"
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=2",
+                "label": "2",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=3",
+                "label": "3",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=4",
+                "label": "4",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=5",
+                "label": "5",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=6",
+                "label": "6",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=7",
+                "label": "7",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=8",
+                "label": "8",
+                "active": false
+            },
+            {
+                "url": "https://admin.ezi2go.com/api/ride/rides?page=2",
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "path": "https://admin.ezi2go.com/api/ride/rides",
+        "per_page": 15,
+        "to": 15,
+        "total": 119
+    }
+}
