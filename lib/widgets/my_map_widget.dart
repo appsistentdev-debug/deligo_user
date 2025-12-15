@@ -348,9 +348,8 @@ class MyMapHelper {
   static Future<List<LatLng>> _getPolylineCoordinates(
       LatLng source, LatLng destination) async {
     List<LatLng> polylineCoordinates = [];
-    PolylinePoints polylinePoints = PolylinePoints();
+    PolylinePoints polylinePoints = PolylinePoints(apiKey: AppConfig.googleApiKey);
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      googleApiKey: AppConfig.googleApiKey,
       request: PolylineRequest(
         origin: PointLatLng(source.latitude, source.longitude),
         destination: PointLatLng(destination.latitude, destination.longitude),

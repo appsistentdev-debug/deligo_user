@@ -92,6 +92,7 @@ class _PaymentMethodStatefulState extends State<PaymentMethodStateful> {
                           width: 1,
                         ),
                       ),
+                      // ignore: deprecated_member_use
                       child: RadioListTile(
                         toggleable: true,
                         value: state.listPayment[index].slug,

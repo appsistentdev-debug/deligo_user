@@ -1163,13 +1163,21 @@ class FetcherCubit extends Cubit<FetcherState> {
 
   String _getErrorMessage(Object e) {
     try {
-      DioException de = (e as DioException);
-      return (de.response?.statusCode ?? -1) > 499
-          ? "Something went wrong"
-          : de.response!.data["message"];
-    } catch (e) {
+      if (e is DioException) {
+        final resp = e.response;
+        final status = resp?.statusCode ?? -1;
+        if (status > 499) return "Something went wrong";
+        final data = resp?.data;
+        if (data is Map && data.containsKey("message") && data["message"] != null) {
+          return data["message"].toString();
+        }
+        if (data is String && data.isNotEmpty) return data;
+        return "Something went wrong";
+      }
+      return e.toString();
+    } catch (err) {
       if (kDebugMode) {
-        print("getErrorMessage: $e");
+        print("getErrorMessage: $err");
       }
       return "Something went wrong";
     }

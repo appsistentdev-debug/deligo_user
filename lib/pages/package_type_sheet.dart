@@ -78,6 +78,7 @@ class _PackageTypeStatefulState extends State<PackageTypeStateful> {
                   width: 0.5,
                 ),
               ),
+              // ignore: deprecated_member_use
               child: RadioListTile(
                 controlAffinity: ListTileControlAffinity.trailing,
                 onChanged: (value) {

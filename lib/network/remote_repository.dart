@@ -72,7 +72,12 @@ class RemoteRepository {
 
   factory RemoteRepository() {
     if (_instance == null) {
-      Dio dio = Dio();
+      Dio dio = Dio(BaseOptions(
+        baseUrl: AppConfig.baseUrl,
+        connectTimeout: const Duration(seconds: 15),
+        receiveTimeout: const Duration(seconds: 30),
+        sendTimeout: const Duration(seconds: 15),
+      ));
       dio.interceptors.add(RequestInterceptor());
       dio.interceptors.add(PrettyDioLogger(
         requestHeader: true,
@@ -203,7 +208,7 @@ class RemoteRepository {
         }
         String errorToReturn = "something_wrong";
         if (e is DioException) {
-          //signout of social accounts.
+          // signout of social accounts.
           try {
             logout();
           } catch (le) {
@@ -211,17 +216,33 @@ class RemoteRepository {
               print(le);
             }
           }
-          if ((e).response != null && (e).response!.data != null) {
-            Map<String, dynamic> errorResponse = (e).response!.data;
-            if (errorResponse.containsKey("message")) {
-              String errorMessage = errorResponse["message"] as String;
-              if (kDebugMode) {
-                print("errorMessage: $errorMessage");
+          try {
+            final resp = (e).response;
+            if (resp != null && resp.data != null) {
+              final data = resp.data;
+              Map<String, dynamic>? errorResponse;
+              if (data is Map<String, dynamic>) {
+                errorResponse = data;
+              } else if (data is String) {
+                try {
+                  final parsed = jsonDecode(data);
+                  if (parsed is Map<String, dynamic>) errorResponse = parsed;
+                } catch (_) {
+                  // ignore parse errors
+                }
               }
-              if (errorMessage.toLowerCase().contains("role")) {
-                errorToReturn = "role_exists";
+              if (errorResponse != null && errorResponse.containsKey("message")) {
+                final errorMessage = (errorResponse["message"] ?? "").toString();
+                if (kDebugMode) {
+                  print("errorMessage: $errorMessage");
+                }
+                if (errorMessage.toLowerCase().contains("role")) {
+                  errorToReturn = "role_exists";
+                }
               }
             }
+          } catch (pe) {
+            if (kDebugMode) print(pe);
           }
         }
         verificationCallback.onCodeVerificationError(errorToReturn);

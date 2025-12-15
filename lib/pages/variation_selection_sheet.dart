@@ -140,7 +140,9 @@ class _VariationSelectionSheetState extends State<VariationSelectionSheet> {
                       shrinkWrap: true,
                       itemCount: widget.product.addon_groups![mainIndex]
                           .addon_choices.length,
-                      itemBuilder: (context, innerIndex) => RadioListTile(
+                      itemBuilder: (context, innerIndex) =>
+                          // ignore: deprecated_member_use
+                          RadioListTile(
                         controlAffinity: ListTileControlAffinity.leading,
                         title: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -164,11 +166,11 @@ class _VariationSelectionSheetState extends State<VariationSelectionSheet> {
                           ],
                         ),
                         value: widget.product.addon_groups![mainIndex]
-                            .addon_choices[innerIndex].id,
+                          .addon_choices[innerIndex].id,
                         groupValue: widget
-                            .product.addon_groups![mainIndex].choiceIdSelected,
+                          .product.addon_groups![mainIndex].choiceIdSelected,
                         onChanged: (value) => setState(() => widget.product
-                            .addon_groups![mainIndex].choiceIdSelected = value),
+                          .addon_groups![mainIndex].choiceIdSelected = value),
                       ),
                     )
                   else

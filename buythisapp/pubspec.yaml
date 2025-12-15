@@ -4,7 +4,7 @@ version: 1.0.0
 homepage: https://gitlab.com/verbosetech-flutter/buy-this-app-package.git
 
 environment:
-  sdk: ">=2.19.6 <3.0.0"
+  sdk: ">=2.19.6 <4.0.0"
 
 dependencies:
   flutter:

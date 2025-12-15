@@ -103,6 +103,7 @@ class _PickupTimeSelectorSheetState extends State<PickupTimeSelectorSheet> {
                             width: 1.5,
                           ),
                         ),
+                        // ignore: deprecated_member_use
                         child: RadioListTile<PickupTime>(
                           title: Text(
                             _pickupTimes[index].title,

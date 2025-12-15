@@ -14,3 +14,5 @@ flutter_native_splash:
     image_dark: "assets/flavors/splash/deligo/app_splash_12_dark.png"
     color_dark: "#000000"
     icon_background_color_dark: "#000000"
+
+    

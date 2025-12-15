@@ -1,5 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
+import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -164,33 +165,40 @@ class AuthCubit extends Cubit<AuthState> implements VerificationCallbacks {
       RegisterError errorState =
           const RegisterError("Something went wrong", "something_wrong");
       try {
-        if (e is DioException &&
-            (e).response != null &&
-            (e).response!.data != null) {
-          Map<String, dynamic> errorResponse = (e).response!.data;
-          if (errorResponse.containsKey("errors")) {
-            if ((errorResponse['errors'] as Map<String, dynamic>)
-                .containsKey("email")) {
-              errorState = RegisterError(
-                  (errorResponse['errors']['email'] as List<dynamic>).isNotEmpty
-                      ? (errorResponse['errors']['email'] as List<dynamic>)[0]
-                      : "Something went wrong",
-                  "err_email");
-            } else if ((errorResponse['errors'] as Map<String, dynamic>)
-                .containsKey("mobile_number")) {
-              errorState = RegisterError(
-                  (errorResponse['errors']['mobile_number'] as List<dynamic>)
-                          .isNotEmpty
-                      ? (errorResponse['errors']['mobile_number']
-                          as List<dynamic>)[0]
-                      : "Something went wrong",
-                  "err_phone");
+        if (e is DioException) {
+          final resp = (e).response;
+          if (resp != null && resp.data != null) {
+            final data = resp.data;
+            Map<String, dynamic>? errorResponse;
+            if (data is Map<String, dynamic>) {
+              errorResponse = data;
+            } else if (data is String) {
+              try {
+                final parsed = jsonDecode(data);
+                if (parsed is Map<String, dynamic>) errorResponse = parsed;
+              } catch (_) {}
+            }
+            if (errorResponse != null && errorResponse.containsKey("errors")) {
+              final errors = errorResponse['errors'];
+              if (errors is Map<String, dynamic>) {
+                if (errors.containsKey("email")) {
+                  final list = errors['email'];
+                  if (list is List && list.isNotEmpty) {
+                    errorState = RegisterError(list[0].toString(), "err_email");
+                  }
+                } else if (errors.containsKey("mobile_number")) {
+                  final list = errors['mobile_number'];
+                  if (list is List && list.isNotEmpty) {
+                    errorState = RegisterError(list[0].toString(), "err_phone");
+                  }
+                }
+              }
             }
           }
         }
-      } catch (e) {
+      } catch (ee) {
         if (kDebugMode) {
-          print(e);
+          print(ee);
         }
       }
       emit(errorState);
