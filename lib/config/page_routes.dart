@@ -44,8 +44,7 @@ class PageRoutes {
   static const String rideInfoPage = 'ride_info_page';
   static const String rideCompletePage = 'ride_complete_page';
   static const String messagePage = 'message_page';
-  static const String confirmPackageOrderDetailsPage =
-      'confirm_package_order_details_page';
+  static const String confirmPackageOrderDetailsPage = 'confirm_package_order_details_page';
   static const String subCategoriesPage = 'sub_categories_page';
   static const String vendorsPage = 'vendors_page';
   static const String productsPage = 'products_page';

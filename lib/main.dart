@@ -115,7 +115,7 @@ Future<void> main() async {
 
   // --- OneSignal Initialization (Required for SDK 5.x) ---- updated by Awanish : 11 dec 2025
   OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
-  OneSignal.initialize("928fb157-0085-4285-b10b-0c7a3898bd85");
+  OneSignal.initialize("ONESIGNAL_APP_ID_CUSTOMER");
 
   // Ask user for permission (Android 13+)
   OneSignal.Notifications.requestPermission(true);

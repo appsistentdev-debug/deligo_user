@@ -1,4 +1,6 @@
 import 'package:deligo/localization/languages/english.dart';
+import 'package:deligo/localization/languages/arabic.dart'; // arabic language updated by prateek 16th dec 2025
+// import 'package:deligo/localization/languages/hindi.dart'; // updated hindi language by prateek 16th dec 2025
 import 'package:deligo/localization/languages/french.dart';
 import 'package:deligo/localization/languages/german.dart';
 import 'package:deligo/localization/languages/indonesian.dart';
@@ -33,7 +35,8 @@ class AppConfig {
 
   static final Map<String, AppLanguage> languagesSupported = {
     "en": AppLanguage("English", english()),
-    //"ar": AppLanguage("عربى", arabic()),
+    // "hnd": AppLanguage("Hindi", hindi()),
+    "ar": AppLanguage("عربى Arabic", arabic()), // arabic language updated by prateek 16th dec 2025
     "de": AppLanguage("Deutsch", german()),
     "pt": AppLanguage("Portugal", portuguese()),
     "fr": AppLanguage("Français", french()),
