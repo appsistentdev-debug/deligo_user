@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+	    <!-- map location find integrate by prateek 17th dec - 2025 -->
+	    <key>NSLocationWhenInUseUsageDescription</key>
+        <string>We need your location to show nearby stores</string>
+        <key>NSLocationAlwaysUsageDescription</key>
+        <string>We need your location</string>
+
 		<key>CFBundleDevelopmentRegion</key>
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>

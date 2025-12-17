@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'dart:ui' as ui;
-
+import 'package:geolocator/geolocator.dart';  //geolocator integrated by prateek 17th dec 2025
 import 'package:deligo/config/app_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +47,26 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
     super.initState();
   }
 
+  // current location code updated by prateek
+  Future<Position?> _getCurrentLocation() async {
+    bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) return null;
+
+    LocationPermission permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+    }
+
+    if (permission == LocationPermission.denied ||
+      permission == LocationPermission.deniedForever) {
+      return null;
+    }
+
+      return await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high,
+      );
+  }
+
   @override
   Widget build(BuildContext context) {
     super.build(context);
@@ -65,23 +85,38 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
         ),
         // gestureRecognizers: Set()
         //   ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer())),
+        
+        myLocationEnabled: true,        // ✅ YAHAN ADD integrated by prateek 17th dec 2025
+        myLocationButtonEnabled: true,  // ✅ YAHAN ADD integrated by prateek 17th dec 2025
+
         mapType: MapType.normal,
         style: snapshot.data,
         markers: Set<Marker>.of(mapData.markers.values),
         polylines: mapData.polyLines,
         zoomControlsEnabled: mapData.zoomControlsEnabled,
         onTap: (LatLng latLng) => widget.onMapTap(latLng),
-        onMapCreated: (GoogleMapController controller) {
+        onMapCreated: (GoogleMapController controller) async // async add by prateek 17th dec 2025
+        {
           _googleMapController = controller;
           // rootBundle
           //     .loadString(isDark
           //         ? 'assets/map_style_dark.json'
           //         : 'assets/map_style.json')
           //     .then((string) => _googleMapController!.setMapStyle(string));
-          if (mapData.scrollX != null || mapData.scrollY != null) {
-            Future.delayed(const Duration(milliseconds: 500),
-                () => scrollBy(mapData.scrollX ?? 0, mapData.scrollY ?? 0));
-          }
+
+          // comment out by prateek sharma 17th dec 2025
+          // if (mapData.scrollX != null || mapData.scrollY != null) {
+          //   Future.delayed(const Duration(milliseconds: 500),
+          //       () => scrollBy(mapData.scrollX ?? 0, mapData.scrollY ?? 0));
+          // }
+          final position = await _getCurrentLocation(); // ✅ YAHAN
+          if (position != null) {
+          _googleMapController!.animateCamera(
+          CameraUpdate.newLatLng(
+          LatLng(position.latitude, position.longitude),
+           ),
+          );
+        }
           if (widget.onBuildComplete != null) widget.onBuildComplete!.call();
         },
       ),
