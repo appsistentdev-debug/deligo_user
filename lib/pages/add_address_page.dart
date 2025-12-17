@@ -20,6 +20,7 @@ import 'package:deligo/widgets/loader.dart';
 import 'package:deligo/widgets/my_map_widget.dart';
 import 'package:deligo/widgets/toaster.dart';
 
+
 class AddAddressPage extends StatelessWidget {
   const AddAddressPage({super.key});
 
@@ -466,3 +467,4 @@ class _AddAddressStatefulState extends State<AddAddressStateful> {
     );
   }
 }
+

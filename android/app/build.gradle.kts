@@ -56,6 +56,10 @@ android {
         //         "onesignal_google_project_number" to "1080082400269"
         //     )
         // )
+
+        // manifestPlaceholders = (
+        //     GOOGLE_MAPS_API_KEY:"AIzaSyDjTV4ogNe7IHY_bMouLNCVSJKzzBeIfEw"
+        // )
     }
 
     signingConfigs {
