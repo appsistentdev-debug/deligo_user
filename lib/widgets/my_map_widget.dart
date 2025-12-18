@@ -1,12 +1,14 @@
 import 'dart:math';
 import 'dart:ui' as ui;
-import 'package:geolocator/geolocator.dart';  //geolocator integrated by prateek 17th dec 2025
+// import 'package:geolocator/geolocator.dart';  //geolocator integrated by prateek 17th dec 2025
 import 'package:deligo/config/app_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+import 'package:geolocator/geolocator.dart';
 
 // ignore: must_be_immutable
 class MyMapWidget extends StatefulWidget {
@@ -47,7 +49,7 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
     super.initState();
   }
 
-  // current location code updated by prateek
+  // // current location code updated by prateek Manual location fetch ki zarurat nahi thi 17th dec 2025
   Future<Position?> _getCurrentLocation() async {
     bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) return null;
@@ -85,7 +87,8 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
         ),
         // gestureRecognizers: Set()
         //   ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer())),
-        
+
+        // User ki current location map par dikhane
         myLocationEnabled: true,        // ✅ YAHAN ADD integrated by prateek 17th dec 2025
         myLocationButtonEnabled: true,  // ✅ YAHAN ADD integrated by prateek 17th dec 2025
 
@@ -95,6 +98,8 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
         polylines: mapData.polyLines,
         zoomControlsEnabled: mapData.zoomControlsEnabled,
         onTap: (LatLng latLng) => widget.onMapTap(latLng),
+
+        // future based operations support karne ke liye
         onMapCreated: (GoogleMapController controller) async // async add by prateek 17th dec 2025
         {
           _googleMapController = controller;
@@ -104,12 +109,11 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
           //         : 'assets/map_style.json')
           //     .then((string) => _googleMapController!.setMapStyle(string));
 
-          // comment out by prateek sharma 17th dec 2025
           // if (mapData.scrollX != null || mapData.scrollY != null) {
           //   Future.delayed(const Duration(milliseconds: 500),
           //       () => scrollBy(mapData.scrollX ?? 0, mapData.scrollY ?? 0));
           // }
-          final position = await _getCurrentLocation(); // ✅ YAHAN
+          final position = await _getCurrentLocation(); // ✅ YAHAN add by prateek 17th dec 2025
           if (position != null) {
           _googleMapController!.animateCamera(
           CameraUpdate.newLatLng(

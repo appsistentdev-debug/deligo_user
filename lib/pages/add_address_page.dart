@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_google_places_hoc081098/flutter_google_places_hoc081098.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+
 import 'package:deligo/bloc/fetcher_cubit.dart';
 import 'package:deligo/bloc/location_cubit.dart';
 import 'package:deligo/config/app_config.dart';
@@ -66,16 +67,35 @@ class _AddAddressStatefulState extends State<AddAddressStateful> {
   late FetcherCubit _fetcherCubit;
   late Address _address;
 
-  @override
-  void initState() {
-    _address = widget.address ??
-        Address(-1, "address_type_home", "", 0.0, 0.0, null, null, null, null,
-            null, null, null, null);
-    _addressController.text = _address.formatted_address;
-    _locationCubit = BlocProvider.of<LocationCubit>(context);
-    _fetcherCubit = BlocProvider.of<FetcherCubit>(context);
-    super.initState();
-  }
+  // @override  // comment by prateek 18th dec 2025
+  // void initState() {
+  //   _address = widget.address ??
+  //       Address(-1, "address_type_home", "", 0.0, 0.0, null, null, null, null,
+  //           null, null, null, null);
+  //   _addressController.text = _address.formatted_address;
+  //   _locationCubit = BlocProvider.of<LocationCubit>(context);
+  //   _fetcherCubit = BlocProvider.of<FetcherCubit>(context);
+  //   super.initState();
+  // }
+@override  // update by prateek 18th dec 2025
+void initState() {
+  super.initState();
+
+  _address = widget.address ??
+      Address(-1, "address_type_home", "", 0.0, 0.0, null, null, null, null,
+          null, null, null, null);
+
+  _addressController.text = _address.formatted_address;
+
+  _locationCubit = context.read<LocationCubit>();
+  _fetcherCubit = context.read<FetcherCubit>();
+
+  /// ✅ ADD THIS (VERY IMPORTANT)
+  WidgetsBinding.instance.addPostFrameCallback((_) {
+    _locationCubit.initRequestLocationPermission();
+  });
+}
+
 
   @override
   Widget build(BuildContext context) {
@@ -114,12 +134,23 @@ class _AddAddressStatefulState extends State<AddAddressStateful> {
                     .getLocalizationFor("error_service"));
               }
             }
-            if (state is LocationLoaded) {
-              LatLng latLng =
-                  LatLng(state.lattitude ?? 0.0, state.longitude ?? 0.0);
-              _fetcherCubit.initFetchLatLngAddress("address", latLng);
-              _updateLocationOnMap(latLng);
-            }
+            // if (state is LocationLoaded) {
+            //   LatLng latLng =
+            //       LatLng(state.lattitude ?? 0.0, state.longitude ?? 0.0);
+            //   _fetcherCubit.initFetchLatLngAddress("address", latLng);
+            //   _updateLocationOnMap(latLng);
+            // }
+
+            if (state is LocationLoaded) {  // update by prateek 18th dec 2025
+            final latLng =
+            LatLng(state.lattitude ?? 0.0, state.longitude ?? 0.0);
+
+            _fetcherCubit.initFetchLatLngAddress("address", latLng);
+
+            /// ✅ marker + camera update ek hi jagah
+            _updateLocationOnMap(latLng);
+          }
+
           },
         ),
         BlocListener<FetcherCubit, FetcherState>(
@@ -176,10 +207,15 @@ class _AddAddressStatefulState extends State<AddAddressStateful> {
                   ? "assets/map_style_dark.json"
                   : "assets/map_style.json",
               onMarkerTap: (String markerId) {},
-              onMapTap: (LatLng latLng) {
-                _fetcherCubit.initFetchLatLngAddress("address", latLng);
-                _updateLocationOnMap(latLng);
+              // onMapTap: (LatLng latLng) {
+              //   _fetcherCubit.initFetchLatLngAddress("address", latLng);
+              //   _updateLocationOnMap(latLng);
+              // },
+
+              onMapTap: (LatLng latLng) {  // update by prateek 18th dec 2025
+              _fetcherCubit.initFetchLatLngAddress("address", latLng);
               },
+
               onBuildComplete: () {
                 if (_address.id != -1) {
                   _updateLocationOnMap(_address.latLng);
@@ -193,6 +229,7 @@ class _AddAddressStatefulState extends State<AddAddressStateful> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: CustomTextField(
+                    controller: _addressController, // add by prateek
                     prefixIcon: const Icon(Icons.search),
                     bgColor: theme.scaffoldBackgroundColor,
                     hintText: AppLocalization.instance
@@ -228,8 +265,13 @@ class _AddAddressStatefulState extends State<AddAddressStateful> {
                       ),
                       //const Spacer(),
                       GestureDetector(
-                        onTap: () =>
-                            _locationCubit.initFetchCurrentLocation(true),
+                        // onTap: () =>
+                        //     _locationCubit.initFetchCurrentLocation(true),
+
+                      onTap: () {  // update by prateek 18th dec 2025
+                      _locationCubit.initRequestLocationPermission();
+                      },
+
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
