@@ -6,6 +6,7 @@ import 'package:deligo/localization/app_localization.dart';
 import 'package:deligo/config/page_routes.dart';
 import 'package:deligo/models/category.dart';
 import 'package:deligo/models/vendor.dart';
+import 'package:deligo/pages/razorpay_test_page.dart';
 import 'package:deligo/pages/ride_type_selection_sheet.dart';
 import 'package:deligo/utility/app_settings.dart';
 import 'package:deligo/utility/cart_manager.dart';
@@ -387,7 +388,42 @@ class TabHomeStatefulState extends State<TabHomeStateful>
                   const SizedBox(height: 24),
                 ],
               ),
+
+//               // 🔴 RAZORPAY TEST BUTTON (TEMPORARY - REMOVE AFTER TESTING)
+// Padding(
+//   padding: const EdgeInsets.symmetric(horizontal: 16),
+//   child: ElevatedButton(
+//     style: ElevatedButton.styleFrom(
+//       backgroundColor: Theme.of(context).primaryColor,
+//       padding: const EdgeInsets.symmetric(vertical: 12),
+//       shape: RoundedRectangleBorder(
+//         borderRadius: BorderRadius.circular(8),
+//       ),
+//     ),
+//     onPressed: () {
+//       // 👉 Navigate to Razorpay test page
+//       Navigator.push(
+//         context,
+//         MaterialPageRoute(
+//           builder: (_) => const RazorpayTestPage(),
+//         ),
+//       );
+//     },
+//     child: const Text(
+//       "Razorpay Test Payment",
+//       style: TextStyle(
+//         color: Colors.white,
+//         fontWeight: FontWeight.bold,
+//       ),
+//     ),
+//   ),
+// ),
+
+// const SizedBox(height: 20),
+
           ],
+            
+          
         ),
       ),
     );

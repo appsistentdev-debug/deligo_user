@@ -57,9 +57,10 @@ android {
         //     )
         // )
 
-        manifestPlaceholders["GOOGLE_MAPS_API_KEY"] =
-        "YOUR_MAP_API_KEY"
+        // manifestPlaceholders["GOOGLE_MAPS_API_KEY"] =
+        // ""
     }
+    
 
     signingConfigs {
         create("release") {

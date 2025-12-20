@@ -43,6 +43,7 @@ dependencies:
   geocoding: ^4.0.0
   google_maps_flutter: ^2.9.0
   geolocator: ^10.1.0  # geolocator integrate by prateek 17th dec 2025
+  http: ^1.2.0
   image_cropper: ^11.0.0
   image_picker: ^1.0.1
   json_annotation: ^4.4.0

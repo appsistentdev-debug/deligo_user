@@ -18,7 +18,7 @@ class AppConfig {
 // Base URL for your app’s API requests.
   static String baseUrl = "http://10.0.2.2:8000/";
 //   Google Maps API key or other Google services
-  static const String googleApiKey = "YourMapsApiKey";
+  static const String googleApiKey = "GOOGLE_MAP_API_KEY";
 //   App ID for OneSignal push notification service.
   static String onesignalAppId = "928fb157-0085-4285-b10b-0c7a3898bd85";
 //   Default UI theme for the app.

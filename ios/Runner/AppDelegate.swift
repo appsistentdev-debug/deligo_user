@@ -28,7 +28,7 @@ import OneSignalFramework  // OneSignal
   ) -> Bool {
 
     // Google Maps API Key
-    GMSServices.provideAPIKey("YOUR_MAP_API_KEY")
+    GMSServices.provideAPIKey("GOOGLE_MAP_API_KEY")
 
     // OneSignal Debug Logs (optional)
     OneSignal.Debug.setLogLevel(.LL_VERBOSE)

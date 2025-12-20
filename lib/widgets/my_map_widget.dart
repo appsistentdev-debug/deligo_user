@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'dart:ui' as ui;
-// import 'package:geolocator/geolocator.dart';  //geolocator integrated by prateek 17th dec 2025
 import 'package:deligo/config/app_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +7,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-import 'package:geolocator/geolocator.dart';
+import 'package:geolocator/geolocator.dart';  //user ki current location nikalne ke liye geolocator integrated by prateek 17th dec 2025
 
 // ignore: must_be_immutable
 class MyMapWidget extends StatefulWidget {
@@ -49,7 +48,8 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
     super.initState();
   }
 
-  // // current location code updated by prateek Manual location fetch ki zarurat nahi thi 17th dec 2025
+  // current location code updated by prateek Manual location fetch ki zarurat nahi thi 17th dec 2025
+  // user ki live location map par dikhata hai
   Future<Position?> _getCurrentLocation() async {
     bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) return null;
@@ -102,6 +102,7 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
         // future based operations support karne ke liye
         onMapCreated: (GoogleMapController controller) async // async add by prateek 17th dec 2025
         {
+          // map ready hone pr call krta hai
           _googleMapController = controller;
           // rootBundle
           //     .loadString(isDark
@@ -113,9 +114,9 @@ class MyMapState extends State<MyMapWidget> with AutomaticKeepAliveClientMixin {
           //   Future.delayed(const Duration(milliseconds: 500),
           //       () => scrollBy(mapData.scrollX ?? 0, mapData.scrollY ?? 0));
           // }
-          final position = await _getCurrentLocation(); // ✅ YAHAN add by prateek 17th dec 2025
+          final position = await _getCurrentLocation(); // ✅ controller save add by prateek 17th dec 2025
           if (position != null) {
-          _googleMapController!.animateCamera(
+          _googleMapController!.animateCamera( // camera user ki current location par legata hai
           CameraUpdate.newLatLng(
           LatLng(position.latitude, position.longitude),
            ),

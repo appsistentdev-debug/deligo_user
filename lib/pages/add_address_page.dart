@@ -22,6 +22,12 @@ import 'package:deligo/widgets/my_map_widget.dart';
 import 'package:deligo/widgets/toaster.dart';
 
 
+// import 'dart:convert';
+// import 'package:flutter/material.dart';
+// import 'package:http/http.dart' as http;
+// import 'package:flutter/foundation.dart';
+
+
 class AddAddressPage extends StatelessWidget {
   const AddAddressPage({super.key});
 
@@ -78,6 +84,10 @@ class _AddAddressStatefulState extends State<AddAddressStateful> {
   //   super.initState();
   // }
 @override  // update by prateek 18th dec 2025
+// Old initState hata ke naya isliye likha kyunki context.read() 
+//safe hai aur postFrameCallback se permission request widget build hone
+// ke baad hoti hai, jisse context-related crash aur location issue nahi aata.
+
 void initState() {
   super.initState();
 
@@ -140,14 +150,15 @@ void initState() {
             //   _fetcherCubit.initFetchLatLngAddress("address", latLng);
             //   _updateLocationOnMap(latLng);
             // }
-
+        
             if (state is LocationLoaded) {  // update by prateek 18th dec 2025
             final latLng =
             LatLng(state.lattitude ?? 0.0, state.longitude ?? 0.0);
 
             _fetcherCubit.initFetchLatLngAddress("address", latLng);
 
-            /// ✅ marker + camera update ek hi jagah
+            /// ✅ marker + camera update ek hi jagah   naya version zyada clean, readable hai aur marker + camera update ko single controlled flow mein
+            ///  handle karta hai (duplicate/unsynced map updates avoid hote hain).
             _updateLocationOnMap(latLng);
           }
 
@@ -213,6 +224,9 @@ void initState() {
               // },
 
               onMapTap: (LatLng latLng) {  // update by prateek 18th dec 2025
+              // _updateLocationOnMap hataaya kyunki ab marker aur camera update 
+              //sirf reverse-geocode success (state listener) ke baad hota hai, jisse 
+              //wrong/temporary location jump nahi hota.
               _fetcherCubit.initFetchLatLngAddress("address", latLng);
               },
 
